@@ -1,0 +1,60 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #3a3e3c;
+}
+
+.daily-grid {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 100%%;
+}
+
+@media screen and (min-width: 600px) {
+    .daily-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .daily-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 930px) {
+    .daily-grid {
+        width: 930px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.daily-card {
+    background-color: #efefef;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-info {
+    /*  display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.card-info li {
+    margin-left: 10px;
+}

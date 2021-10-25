@@ -3,12 +3,6 @@ import DailyCard from './DailyCard';
 import { kelvinToFahrenheit } from '../hooks/kelvinToFahrenheit';
 
 const Glance = ({ weather, lat, long }) => {
-    //function to convert kelvin to fahrenheit and round to 2 decimal places
-
-    console.log(weather);
-    console.log(lat);
-    console.log(long);
-
     return (
         <div>
             <h1>{weather.timezone}</h1>

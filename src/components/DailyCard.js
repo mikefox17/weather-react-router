@@ -3,9 +3,8 @@ import React from 'react';
 import { unixToDate } from '../hooks/unixToDate';
 
 const DailyCard = ({ day, id }) => {
-    //function to convert unix to date and day of the week
-
     console.log(day, id);
+
     return (
         <div className='daily-card'>
             <Link to={`/day/${id}`}>More here</Link>

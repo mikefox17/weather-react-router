@@ -1,11 +1,5 @@
 import Glance from './components/Glance';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DayInfo from './components/DayInfo';
 import { useState, useEffect } from 'react';
 

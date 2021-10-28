@@ -1,12 +1,12 @@
-import Glance from './components/Glance';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import DayInfo from './components/DayInfo';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Glance from './components/Glance';
+import DayInfo from './components/DayInfo';
 
 const App = () => {
     const [weather, setWeather] = useState({});
-    const [lat, setLat] = useState('-33.04');
-    const [long, setLong] = useState('94.01');
+    const [lat, setLat] = useState('39.29');
+    const [long, setLong] = useState('-76.60');
 
     const getWeather = async () => {
         try {
@@ -25,6 +25,7 @@ const App = () => {
     }, []);
 
     if (!weather.current) return null;
+
     return (
         <div className='App'>
             <Router>
